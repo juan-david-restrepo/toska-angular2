@@ -1,10 +1,14 @@
+
+
+
     <header>
-        <h1 class="logo">Toska</h1>
-        <nav>
-            <a href="" class="juegos">Juegos</a>
-            <a href="">Comunidad</a>
-            <a href="">Soporte</a>
-            <a routerLink=""><button class="iniciar" id="iniciar">Iniciar</button></a>
-            <a href=""><button class="registrar" id="Registrar">Registrar</button></a>
-        </nav>
+      <a routerLink="/"><div class="logo">Toska</div></a>
+     <nav>
+        <button class="juegos" id="juegos" [routerLink]="['/']">Juegos</button>
+        <a class="comunidad" href="#">Comunidad</a>
+        <a class="Soporte" href="#">Soporte</a>
+        <span class="cart">🛒</span>
+        <button class="botonLigin" id="iniciar" [routerLink]="['/login']">Iniciar sesion</button>
+        <button class="botonLigin" id="registrar" [routerLink]="['/registro']">Registrarme</button>
+      </nav>
     </header>

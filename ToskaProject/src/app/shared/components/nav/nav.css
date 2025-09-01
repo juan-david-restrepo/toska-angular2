@@ -2,68 +2,113 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
-    background: #111;
+    padding: 20px 40px;
+    border-bottom: 2px solid rgb(243, 245, 245);
+    box-shadow: 0 0 15px rgba(214, 214, 214, 0.4);
     height: 110px;
-    border-bottom: 1px solid rgb(243, 245, 245);
 }
 
 .logo {
-    font-size: 35px;
-    font-weight: 600;
-    color: rgb(243, 245, 245);
+  font-size: 28px;
+  font-weight: 700;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
-
-.juegos {
-    background: rgb(255, 255, 255);
-    padding: 6px 18px;
-    border-radius: 8px;
-    color: black;
-    font-weight: 600;
+nav a:hover {
+    color: rgb(233, 233, 233);
 }
 
-button {
-    width: 90px;
+.cart {
+  font-size: 20px;
+}
+
+.btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+    border: none;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botonLigin {
+    width: 93px;
     height: 35px;
     border-radius: 8px;
     cursor: pointer;
     border: none;
     font-weight: 600;
     transition: 0.3s;
-}
-
-.iniciar {
     background: rgb(255, 255, 255);
     color: black;
+    border: none;
 }
 
-.iniciar:hover {
-    background: #c9cccc;
+.botonLigin:hover {
+    background: #cfcfcf;
 }
 
-.juegos:hover{
-    background: #c9cccc;
+.juegos {
+    padding: 6px 18px;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border: none;
 }
 
-.registrar {
-    background: #333;
+.juegos:hover {
+    background: #cfcfcf;
+}
+
+.comunidad{
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+
+.Soporte{
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
     color: white;
 }
 
-.registrar:hover {
-    background: #555;
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.search-box {
+  flex: 0.8;
+  display: flex;
+  border: 1px solid #c7c4c4;
+  border-radius: 20px;
+  padding: 6px 12px;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(214, 214, 214, 0.4);
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: #0d0d0d;
 }

@@ -1,25 +1,6 @@
     <app-nav></app-nav>
     
     <main>
-        <div class="FormContainer active" id="formRegistro">
-            <h2>Crear Cuenta</h2>
-            <form>
-                <label>Email</label>
-                <input type="email" placeholder="example@gmail.com" required>
-
-                <label>Contraseña</label>
-                <input type="password" required>
-
-                <label>Usuario</label>
-                <input type="text" required>
-
-                <label>Fecha de nacimiento</label>
-                <input type="date" placeholder="DD/MM/AA" required>
-
-                <button type="submit" class="Registrarme">Registrarme</button>
-            </form>
-        </div>
-
         <div class="FormContainer" id="formIniciarSesion" >
              <h2>Iniciar Sesion</h2>
             <form>
@@ -27,24 +8,12 @@
                 <input type="email" placeholder="example@gmail.com" required>
 
                 <label>Contraseña</label>
+                
                 <input type="password" required>
 
                 <button type="submit" class="Registrarme">Iniciar sesion</button>
 
-                <a href="" id="RecuperarContraseña">¿Olvidaste tu contraseña?</a>
-            </form>
-        </div>
-
-        <div class="FormContainer" id="formContraseña" >
-             <h2>Recuperar contraseña</h2>
-            <form>
-                <label>Email</label>
-                <input type="email" placeholder="example@gmail.com" required>
-
-                <label>Contraseña</label>
-                <input type="password" required>
-
-                <button type="submit" class="Registrarme">Cambiar</button>
+                <a routerLink="/contrasena" id="RecuperarContraseña">¿Olvidaste tu contraseña?</a>
             </form>
         </div>
     </main>

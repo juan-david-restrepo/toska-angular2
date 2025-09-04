@@ -1,3 +1,9 @@
+.cont{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -12,17 +18,6 @@ main {
     width: 550px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(214, 214, 214, 0.4);
-    z-index: 1;
-    position: absolute;
-    transition: opacity 0.4s ease;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.FormContainer.active {
-    opacity: 1;
-    visibility: visible;
-    position: relative;
 }
 
 .FormContainer h2 {

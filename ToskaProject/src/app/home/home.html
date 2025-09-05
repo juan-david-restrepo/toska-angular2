@@ -1,13 +1,6 @@
 <app-nav ></app-nav>
     <main>
-        <div class="buscador-filtro">
-            <div class="search-box">
-                <input type="text" placeholder="Buscar..." />
-            </div>
-            <a href="">Explorar</a>
-            <a href="">Gratis</a>
-            <a href="">Mas vendidos</a>
-        </div>
+        <app-buscador></app-buscador>
         <header>
           <div class="carrusel" 
             [style.backgroundImage]="'url(' + images[currentIndex] + ')'">
@@ -16,18 +9,37 @@
               <button class="next" (click)="nextImage()">&#10095;</button>
             </div>
           </div>
+
           <div class="Promociones">
-            <h2>Promociones</h2>
-            <img src="assets/images/terraria.webp" alt="">
-            <img src="assets/images/black-ops-6-.jpg" alt="">
-            <img src="assets/images/the-ast-of-us.webp" alt="">
+            <h2>{{promiciones()}}</h2>
+
+            <div class="promo-item">
+              <img src="assets/images/terraria.webp" alt="">
+              <div class="info-adicional">
+                Terraria es un juego de aventura y exploración con construcción y combate en un mundo abierto.
+              </div>
+            </div>
+
+            <div class="promo-item">
+              <img src="assets/images/black-ops-6-.jpg" alt="">
+              <div class="info-adicional">
+                Call of Duty Black Ops 6 trae acción intensa, nuevos modos multijugador y una campaña épica.
+              </div>
+            </div>
+
+            <div class="promo-item">
+              <img src="assets/images/the-ast-of-us.webp" alt="">
+              <div class="info-adicional">
+                The Last of Us cuenta una historia emocional en un mundo postapocalíptico con supervivencia y acción.
+              </div>
+            </div>
           </div>
         </header>
 
 
 
       <section>
-        <h2 class="categorias">Mas jugados</h2>
+        <h2 class="categorias">{{masJugados()}}</h2>
         <div class="games-grid">
           <div class="game-card">
             <img
@@ -45,7 +57,7 @@
               alt="Minecraft 2"
             />
             <div class="game-info">
-              <div class="game-title">Pene 2</div>
+              <div class="game-title">Minecraft 2</div>
               <div class="game-price">$120000</div>
             </div>
           </div>
@@ -114,7 +126,7 @@
           </div>
         </div>
 
-        <h2 class="categorias">Mas jugados</h2>
+        <h2 class="categorias">Mas Vendidos</h2>
         <div class="games-grid">
           <div class="game-card">
             <img
@@ -132,7 +144,7 @@
               alt="Minecraft 2"
             />
             <div class="game-info">
-              <div class="game-title">Pene 2</div>
+              <div class="game-title">Minecraft 2</div>
               <div class="game-price">$120000</div>
             </div>
           </div>
@@ -200,6 +212,94 @@
             </div>
           </div>
         </div>
+
+        <h2 class="categorias">Gratis</h2>
+        <div class="games-grid">
+          <div class="game-card">
+            <img
+              src="assets/images/MMD_100146_14e44a7f441b415b89a274bc1a248d26_futbol_y_asi_sera_la_portada_del_fifa_30.jpg"
+              alt="Fifa 30"
+            />
+            <div class="game-info">
+              <div class="game-title">Fifo 30</div>
+              <div class="game-price highlight">$400000</div>
+            </div>
+          </div>
+          <div class="game-card">
+            <img
+              src="assets/images/minecraft-2-game-rant.avif"
+              alt="Minecraft 2"
+            />
+            <div class="game-info">
+              <div class="game-title">Minecraft 2</div>
+              <div class="game-price">$120000</div>
+            </div>
+          </div>
+          <div class="game-card">
+            <img
+              src="assets/images/71uizbdZ5dL.jpg"
+              alt="GTA VII"
+            />
+            <div class="game-info">
+              <div class="game-title">GTA 12</div>
+              <div class="game-price">$200000</div>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img
+              src="assets/images/resident-evil-2-remake-20191141048287_1.jpg"
+              alt="Resident Evil 2"
+            />
+            <div class="game-info">
+              <div class="game-title">Resident Good 2</div>
+              <div class="game-price">$82000</div>
+            </div>
+          </div>
+          <div class="game-card">
+            <img
+              src="assets/images/silent-hill-2-remake-202410813414824_13.jpg"
+              alt="Silent Hill 2"
+            />
+            <div class="game-info">
+              <div class="game-title">Silencio Hill 2</div>
+              <div class="game-price">$210000</div>
+            </div>
+          </div>
+          <div class="game-card">
+            <img
+              src="assets/images/Devil_May_Cry_3_boxshot.jpg"
+              alt="Devil May Cry"
+            />
+            <div class="game-info">
+              <div class="game-title">Happy May Cry</div>
+              <div class="game-price">$67000</div>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img
+              src="assets/images/GodOfWar.jpg"
+              alt="God of War"
+            />
+            <div class="game-info">
+              <div class="game-title">God of War</div>
+              <div class="game-price">$80000</div>
+            </div>
+          </div>
+            
+          <div class="game-card">
+            <img
+              src="assets/images/bully2.jpg"
+              alt="Bully 2"
+            />
+            <div class="game-info">
+              <div class="game-title">Bully 2</div>
+              <div class="game-price">$90000</div>
+            </div>
+          </div>
+        </div>
+
       </section>
     </main>
 

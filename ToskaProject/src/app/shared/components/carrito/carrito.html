@@ -1,0 +1,12 @@
+<aside class="carrito">
+  <h2>Carrito</h2>
+  <ul>
+    <li *ngFor="let juego of carritoService.juegos()">
+      {{ juego.nombre }} - {{ juego.precio | currency:'COP' }}
+      <button (click)="carritoService.eliminarJuego(juego.id)">❌</button>
+    </li>
+  </ul>
+  <button (click)="carritoService.limpiarCarrito()">Vaciar carrito</button>
+</aside>
+
+

@@ -1,14 +1,17 @@
 
+<header>
+  <a routerLink="/"><div class="logo">Toska</div></a>
+  <nav>
+    <button class="juegos" id="juegos" [routerLink]="['/']">{{ juegos() }}</button>
+    <a class="explorar" routerLink="/explorar">Explorar</a>
+    <a class="comunidad" href="#">Comunidad</a>
+    <a class="Soporte" href="#">Soporte</a>
+    <span class="cart" (click)="toggleCarrito()">{{ carrito() }}</span>
+    <button class="botonLigin" id="iniciar" [routerLink]="['/login']">Iniciar sesion</button>
+    <button class="botonLigin" id="registrar" [routerLink]="['/registro']">Registrarme</button>
+  </nav>
+</header>
 
+<!-- aside solo se muestra cuando se abre -->
+<app-carrito *ngIf="mostrarCarrito()" />
 
-    <header>
-      <a routerLink="/"><div class="logo">Toska</div></a>
-     <nav>
-        <button class="juegos" id="juegos" [routerLink]="['/']">Juegos</button>
-        <a class="comunidad" href="#">Comunidad</a>
-        <a class="Soporte" href="#">Soporte</a>
-        <span class="cart">🛒</span>
-        <button class="botonLigin" id="iniciar" [routerLink]="['/login']">Iniciar sesion</button>
-        <button class="botonLigin" id="registrar" [routerLink]="['/registro']">Registrarme</button>
-      </nav>
-    </header>

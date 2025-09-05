@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Nav } from '../shared/components/nav/nav';
 import { Footer } from '../shared/components/footer/footer';
 
@@ -9,5 +9,6 @@ import { Footer } from '../shared/components/footer/footer';
   styleUrl: './registro.css'
 })
 export class Registro {
-
+  protected readonly contrasena = signal("Contraseña");
+  protected readonly registrarme = signal("Registrarme")
 }

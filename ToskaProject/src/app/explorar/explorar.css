@@ -143,6 +143,25 @@ section {
 
 .game-info {
   padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  justify-content: center;
+}
+
+.game-info button{
+    width: 80px;
+    border-radius: 19px;
+    padding: 13px;
+    border: none;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+}
+
+.nombre-precio{
+    display: flex;
+    flex-direction: column;
 }
 
 .game-title {
@@ -180,14 +199,6 @@ section {
   margin-top: 21%;
 }
 
-.carrusel button {
-  background: rgba(0,0,0,0.5);
-  border: none;
-  color: white;
-  font-size: 2rem;
-  padding: 10px;
-  cursor: pointer
-}
 
 a{
     text-decoration: none;
